@@ -25,7 +25,7 @@ class DiabloRestController extends Controller
 
         $diablo = new Diablo($client);
 
-        $response = $diablo->getHeroProfile('Unic-21493', '90545425')->getBody();
+        $response = $diablo->getHeroProfile($battleTag, $heroId)->getBody();
 
         $view = View::create(['data' => $response], Response::HTTP_OK);
         $view->setFormat('json');

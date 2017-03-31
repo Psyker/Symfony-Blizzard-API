@@ -1,4 +1,0 @@
-blizzard_rest_api:
-    type: rest
-    prefix: /api
-    resource: "@AppBundle/Controller/Api/DiabloRestController.php"
