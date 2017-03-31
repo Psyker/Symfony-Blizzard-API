@@ -40,7 +40,7 @@ class DiabloRestController extends Controller
         $diablo = $this->createClient();
         $response =  $diablo->getItemDataById($itemId);
 
-        $view =  View::create(['data' => $response], Response::HTTP_OK);
+        $view = View::create(['data' => $response], Response::HTTP_OK);
         $view->setFormat('json');
 
         return $view;
