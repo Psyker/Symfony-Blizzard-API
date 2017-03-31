@@ -85,4 +85,5 @@ class Diablo extends Service
     {
         return $this->request('/data/artisan/'.(string) $artisan, $options);
     }
+
 }
